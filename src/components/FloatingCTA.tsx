@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Phone, MessageCircle, X } from 'lucide-react';
+import { Phone, X } from 'lucide-react';
 
 const FloatingCTA = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -26,31 +26,22 @@ const FloatingCTA = () => {
           <div className="relative">
             {/* Expanded Menu */}
             <AnimatePresence>
-              {isExpanded && (
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 20 }}
-                  className="absolute bottom-16 right-0 flex flex-col gap-3"
+            {isExpanded && (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 20 }}
+                className="absolute bottom-16 right-0 flex flex-col gap-3"
+              >
+                <a
+                  href="tel:+91XXXXXXXXXX"
+                  className="flex items-center gap-3 px-4 py-3 bg-primary text-primary-foreground rounded-full shadow-elevated hover:shadow-gold transition-shadow"
                 >
-                  <a
-                    href="tel:+91XXXXXXXXXX"
-                    className="flex items-center gap-3 px-4 py-3 bg-primary text-primary-foreground rounded-full shadow-elevated hover:shadow-gold transition-shadow"
-                  >
-                    <Phone className="w-5 h-5" />
-                    <span className="font-heading font-medium text-sm whitespace-nowrap">Call Now</span>
-                  </a>
-                  <a
-                    href="https://wa.me/91XXXXXXXXXX"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-3 px-4 py-3 bg-green-600 text-primary-foreground rounded-full shadow-elevated hover:shadow-lg transition-shadow"
-                  >
-                    <MessageCircle className="w-5 h-5" />
-                    <span className="font-heading font-medium text-sm whitespace-nowrap">WhatsApp</span>
-                  </a>
-                </motion.div>
-              )}
+                  <Phone className="w-5 h-5" />
+                  <span className="font-heading font-medium text-sm whitespace-nowrap">Call Now</span>
+                </a>
+              </motion.div>
+            )}
             </AnimatePresence>
 
             {/* Toggle Button */}

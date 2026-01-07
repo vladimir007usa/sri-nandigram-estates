@@ -13,6 +13,14 @@ import temple from '@/assets/temple.jpg';
 import playground from '@/assets/children-playground.jpg';
 import mangoGrove from '@/assets/mango-grove.jpg';
 import yogaArea from '@/assets/yoga-area.jpg';
+import varnashramCollege from '@/assets/varnashram-college.jpg';
+import vaishnavInstitute from '@/assets/vaishnav-institute.jpg';
+import gitaPathshala from '@/assets/gita-pathshala.jpg';
+import yajnaSala from '@/assets/yajna-sala.jpg';
+import guestHouse from '@/assets/guest-house.jpg';
+import securityGate from '@/assets/security-gate.jpg';
+import internetFacility from '@/assets/internet-facility.jpg';
+import waterTreatment from '@/assets/water-treatment.jpg';
 
 const features = [
   {
@@ -31,25 +39,25 @@ const features = [
     icon: GraduationCap,
     title: 'Varnashram College',
     description: 'Traditional education integrating spiritual wisdom with practical skills.',
-    image: null,
+    image: varnashramCollege,
   },
   {
     icon: BookOpen,
     title: 'Vaishnav Research Institute',
     description: 'Dedicated to preserving and advancing Vaishnava philosophy and culture.',
-    image: null,
+    image: vaishnavInstitute,
   },
   {
     icon: BookOpen,
     title: 'Gita Pathshala',
     description: 'Learn the timeless wisdom of Bhagavad Gita in a nurturing environment.',
-    image: null,
+    image: gitaPathshala,
   },
   {
     icon: Flame,
     title: 'Goura Yajna Sala',
     description: 'Sacred space for performing Vedic yajnas and spiritual ceremonies.',
-    image: null,
+    image: yajnaSala,
   },
   {
     icon: Baby,
@@ -79,25 +87,25 @@ const features = [
     icon: Hotel,
     title: 'Srivas Bhavan Guest House',
     description: 'Comfortable staying facilities for residents and visiting guests.',
-    image: null,
+    image: guestHouse,
   },
   {
     icon: Shield,
     title: 'Secured Gated Community',
     description: '24/7 security with CCTV cameras for complete peace of mind.',
-    image: null,
+    image: securityGate,
   },
   {
     icon: Wifi,
     title: 'Dedicated Internet Facilities',
     description: 'High-speed connectivity to stay connected with the world.',
-    image: null,
+    image: internetFacility,
   },
   {
     icon: Droplets,
     title: 'Water Treatment Plant',
     description: 'Pure, treated water supply for all community needs.',
-    image: null,
+    image: waterTreatment,
   },
   {
     icon: Sun,
