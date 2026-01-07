@@ -55,19 +55,16 @@ const HeroSection = () => {
             Luxury Villas, Plots & Land in Mayapur — Where Spirituality Meets Modern Living
           </motion.p>
 
-          {/* CTA Buttons */}
+          {/* CTA Button */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 0.8 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center"
+            className="flex justify-center"
           >
             <a href="#properties" className="btn-secondary group">
               Explore Properties
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-            </a>
-            <a href="#contact" className="btn-outline">
-              Book a Site Visit
             </a>
           </motion.div>
         </motion.div>
