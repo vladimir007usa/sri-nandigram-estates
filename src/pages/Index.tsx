@@ -9,6 +9,7 @@ import PricingSection from '@/components/PricingSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import FloatingCTA from '@/components/FloatingCTA';
+import RunningBull from '@/components/RunningBull';
 
 const Index = () => {
   return (
@@ -24,6 +25,7 @@ const Index = () => {
       <ContactSection />
       <Footer />
       <FloatingCTA />
+      <RunningBull />
     </main>
   );
 };
